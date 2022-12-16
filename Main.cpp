@@ -4,7 +4,7 @@
 
 using namespace std;
 
-//devrait se trouver dans headers
+//protos
 int roll();
 int asknumber();
 void iswinner(int numero, int numero2);
@@ -15,14 +15,11 @@ void iswinner(int numero, int numero2);
 int main() {
 
 	int num_gagnant = roll();
+
 	int num_user = asknumber();
-	
 
 	iswinner(num_gagnant, num_user);
 	
-
-
-
 	return 0;
 }
 
@@ -52,9 +49,9 @@ void iswinner(int numero, int numero2) {
 
 	if (numero2 == numero) {
 
-		cout << "Bravo vous avez gagné !!!" << endl;
+		cout << "Bravo vous avez gagne !!!" << endl;
 	}
-	else { cout << "Nullos ! vous avez perdu ! C'était " << numero << endl; main(); }
+	else { cout << "Nullos ! vous avez perdu ! C'etait " << numero << endl; main(); } //appel Ã©trange au main pour boucler ;/
 
 
 }
